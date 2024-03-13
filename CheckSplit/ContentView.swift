@@ -37,6 +37,7 @@ struct ContentView: View {
                             Text($0, format: .percent)
                         }
                     }
+                    .pickerStyle(.segmented)
                 }
                 
                 // Will display final amount.
