@@ -31,7 +31,7 @@ struct ContentView: View {
                 }
                 
                 // This picker will have the tip percentages.
-                Section {
+                Section("How much do you want to tip?") {
                     Picker("Tip percentage", selection: $tipPercentage) {
                         ForEach(tipPercentages, id: \.self) {
                             Text($0, format: .percent)
